@@ -1,0 +1,16 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <title>Product placeholder</title>
+  <defs>
+    <linearGradient id="pkt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f1e0"/>
+      <stop offset="100%" style="stop-color:#e8dcc4"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#pkt)"/>
+  <!-- Seed packet outline -->
+  <rect x="110" y="72" width="180" height="256" rx="14" fill="#fffffc" stroke="#3f7142" stroke-width="3" opacity="0.9"/>
+  <path d="M124 120h172" stroke="#c8862a" stroke-width="2" opacity="0.55"/>
+  <!-- Stylized sprout -->
+  <ellipse cx="200" cy="238" rx="28" ry="44" fill="#3f7142" opacity="0.85" transform="rotate(-8 200 238)"/>
+  <path d="M200 168c18 24 22 52 8 78-14-30-10-58-8-78z" fill="#52704c" opacity="0.9"/>
+</svg>

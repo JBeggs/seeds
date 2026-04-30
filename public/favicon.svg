@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Seeds">
+  <defs>
+    <linearGradient id="sg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3f7142"/>
+      <stop offset="100%" style="stop-color:#2d5a30"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="7" fill="#f8f1e0"/>
+  <!-- Seed shape -->
+  <ellipse cx="16" cy="19" rx="5" ry="7.5" fill="url(#sg)" transform="rotate(-12 16 19)"/>
+  <!-- Leaf -->
+  <path fill="#52704c" d="M21 7c2.5 4.2 1.8 9-1.8 11.2-1.8-3.4-.5-7.8 1.8-11.2z"/>
+  <path fill="none" stroke="#2a2114" stroke-width="0.35" d="M21 7c-2 2.8-2.5 6-1.8 9.2"/>
+</svg>

@@ -23,14 +23,14 @@ import { resolveLocale } from '@/lib/locale'
 // Header/Footer/metadata all read cookies or live company data.
 export const dynamic = 'force-dynamic'
 
-/** Default Heirloom theme — `--color-bg` / `--color-text` (see PLAN-07-SEEDS.md) */
+/** Default Greenhouse — `--color-bg` / `--color-text` (see PLAN-07-SEEDS.md) */
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   viewportFit: 'cover',
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#F8F1E0' },
-    { media: '(prefers-color-scheme: dark)', color: '#2A2114' },
+    { media: '(prefers-color-scheme: light)', color: '#F3FAF4' },
+    { media: '(prefers-color-scheme: dark)', color: '#1A2E1F' },
   ],
 }
 

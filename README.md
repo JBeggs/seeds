@@ -1,6 +1,6 @@
 # Seeds & Garden (Template 7)
 
-Next.js 16 storefront for **[PLAN-07-SEEDS.md](../PLAN-07-SEEDS.md)**. Forked from `honey/` (Template 2) with themes **Heirloom**, **Botanical**, and **Modern Garden**. Dev server: **port 3008**. Default company slug: **`seeds`**.
+Next.js 16 storefront for **[PLAN-07-SEEDS.md](../PLAN-07-SEEDS.md)**. Forked from `honey/` (Template 2) with themes **Greenhouse**, **Earthbed**, and **Moonflower** (stable `data-theme` IDs: `heirloom`, `botanical`, `modern-garden`). Dev server: **port 3008**. Default company slug: **`seeds`**.
 
 ## Quick start
 
@@ -19,7 +19,7 @@ Open [http://localhost:3008](http://localhost:3008).
 - **`NEXT_PUBLIC_API_URL`** — django-crm API base (e.g. `http://localhost:8000/api`).
 - **`NEXT_PUBLIC_SITE_URL`** — canonical URL for Open Graph (optional on Vercel; `VERCEL_URL` is used as fallback).
 
-Themes: `data-theme` values **`heirloom`** (default), **`botanical`**, **`modern-garden`**. Cookie / `localStorage` key: **`site_theme`**.
+Themes: `data-theme` values **`heirloom`** (Greenhouse, default), **`botanical`** (Earthbed), **`modern-garden`** (Moonflower). Cookie / `localStorage` key: **`site_theme`**.
 
 ## Scripts
 

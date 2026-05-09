@@ -6,7 +6,8 @@
  * (e.g. `THEMES.includes is not a function`). Keep the plain constants here and
  * re-export them from `ThemeContext.tsx` for backwards-compatible client use.
  *
- * Template 7 (Seeds): Heirloom / Botanical / Modern Garden — see PLAN-07-SEEDS.md.
+ * Template 7 (Seeds): display names Greenhouse / Earthbed / Moonflower — stable IDs
+ * `heirloom` | `botanical` | `modern-garden` in HTML + cookie. See PLAN-07-SEEDS.md.
  */
 
 export const THEMES = ['heirloom', 'botanical', 'modern-garden'] as const
@@ -20,18 +21,18 @@ export const THEME_META: Record<
 > = {
   heirloom: {
     id: 'heirloom',
-    label: 'Heirloom',
-    description: 'Kraft cream and leaf green',
+    label: 'Greenhouse',
+    description: 'Crisp leaf green, marigold accent',
   },
   botanical: {
     id: 'botanical',
-    label: 'Botanical',
-    description: 'Paper white and moss',
+    label: 'Earthbed',
+    description: 'Olive, soil brown, copper',
   },
   'modern-garden': {
     id: 'modern-garden',
-    label: 'Modern',
-    description: 'Bright fresh green',
+    label: 'Moonflower',
+    description: 'Plum, sage, soft orchid',
   },
 }
 

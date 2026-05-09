@@ -1,12 +1,12 @@
 'use client'
 
 import { useTheme, THEMES, THEME_META, type Theme } from '@/contexts/ThemeContext'
-import { Sprout, Flower2, Sun } from 'lucide-react'
+import { Sprout, Leaf, Moon } from 'lucide-react'
 
 const ICONS: Record<Theme, React.ComponentType<{ className?: string }>> = {
   heirloom: Sprout,
-  botanical: Flower2,
-  'modern-garden': Sun,
+  botanical: Leaf,
+  'modern-garden': Moon,
 }
 
 interface ThemeToggleProps {

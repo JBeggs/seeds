@@ -5,7 +5,7 @@ import {
   getArticleDisplaySettings,
 } from '@/lib/article-display-settings'
 import { Article } from '@/lib/types'
-import { getArticleCardImageUrl } from '@/lib/image-utils'
+import { getArticleCardImageUrl, IMAGE_DIM } from '@/lib/image-utils'
 import { resolveArticleAuthorLabel } from '@/lib/article-author-options'
 import { Calendar, User, ArrowRight, Search, Newspaper } from 'lucide-react'
 import PageHero from '@/components/hero/PageHero'
@@ -30,10 +30,9 @@ async function getArticles(params: { search?: string; category?: string }) {
 
 async function getCategories(): Promise<{ id: string; name: string }[]> {
   try {
-    const slug = process.env.NEXT_PUBLIC_COMPANY_SLUG || 'seeds'
     const baseUrl = process.env.NEXT_PUBLIC_API_URL || 'https://3pillars.pythonanywhere.com/api'
     const res = await fetch(`${baseUrl}/news/categories/`, {
-      headers: { 'X-Company-Slug': slug, 'Content-Type': 'application/json' },
+      headers: { 'X-Company-Slug': 'riverside-herald', 'Content-Type': 'application/json' },
       cache: 'no-store',
     })
     if (!res.ok) return []
@@ -80,7 +79,7 @@ export default async function ArticlesPage({ searchParams }: ArticlesPageProps) 
             Stories & Inspiration
           </h1>
           <p className="text-lg text-green-100">
-            Growing tips, seasonal notes, and updates from our catalog
+            Tips, guides, and behind-the-scenes from the world of vintage and modern treasures
           </p>
         </div>
       </section>
@@ -148,6 +147,10 @@ export default async function ArticlesPage({ searchParams }: ArticlesPageProps) 
                   <img
                     src={getArticleCardImageUrl(article)}
                     alt={article.title}
+                    width={IMAGE_DIM.articleCard.width}
+                    height={IMAGE_DIM.articleCard.height}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="p-5">
